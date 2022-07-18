@@ -14,12 +14,9 @@ void counting_sort(int *array, size_t size)
 
 	if (array == NULL || size <= 1)
 		return;
-
 	new = malloc(sizeof(*array) * size);
-
 	if (new == NULL)
 		return;
-
 	for (; i < size; i++)
 	{
 		new[i] = array[i];
@@ -32,20 +29,16 @@ void counting_sort(int *array, size_t size)
 		free(new);
 		return;
 	}
-
 	for (i = 0; i < size; i++)
 		count[array[i]]++;
 	total = 0;
-
 	for (n = 0; n < max; n++)
 	{
 		tmp = count[n];
 		count[n] += total;
 		total += tmp;
 	}
-
 	print_array(count, max);
-
 	for (i = 0; i < size; i++)
 	{
 		array[count[new[i]] - 1] = new[i];
