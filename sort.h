@@ -4,6 +4,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct listint_s - doubly linked list node
+ *
+ * @n: integer stored in node
+ * @prev: pointer to previous element on the list
+ * @next: pointer to next element on the list
+ *
+ **/
+
 typedef struct listint_s
 {
 	const int n;
