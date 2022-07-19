@@ -33,7 +33,6 @@ void _swap(listint_t *currentNode, listint_t *nodeAfter, listint_t **oList)
 
 	print_list(*oList);
 }
-
 /**
  * cocktail_sort_list - function that sorts a doubly linked list of
  * integers in ascending order using the Cocktail shaker sort algorithm
