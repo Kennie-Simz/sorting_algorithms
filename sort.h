@@ -33,6 +33,8 @@ void shell_sort(int *array, size_t size);
 void _swap(listint_t *currentNode, listint_t *nodeAfter, listint_t **oList);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
-
+void merge_sort(int *array, size_t size);
+void print(int *array, char *order, size_t left, size_t right);
+void merge_rec(int *array, int *tmp, size_t left, size_t right);
 
 #endif /**SORT_HEADER**/
