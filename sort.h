@@ -41,6 +41,7 @@ void swap_heap(int *array, size_t a, size_t b);
 void child(int *array, size_t size, size_t last, size_t max);
 void max_heap(int *array, size_t size);
 void heap_sort(int *array, size_t size);
-
+void csort(int *array, size_t size, int div);
+void radix_sort(int *array, size_t size);
 
 #endif /**SORT_HEADER**/
